@@ -180,12 +180,43 @@ See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
 
 ```
 february17th/
-├── manifest.json          # Extension configuration
-├── background.js          # Proxy routing logic
-├── popup.html/js/css      # Toolbar popup interface
-├── options.html/js/css    # Settings page
-├── ico/                   # Extension icons
-└── docs/                  # Documentation
+february17th-main/
+│
+├── 01_md/                          # Documentation files
+│   ├── AMO_REVIEW_NOTES.md
+│   ├── CHANGELOG.md
+│   ├── CONTRIBUTING.md
+│   ├── HOW-IT-WORKS.md
+│   ├── SECURITY.md
+│   └── TESTING.md
+│
+├── 02_html/                        # HTML pages
+│   ├── options.html
+│   └── popup.html
+│
+├── 03_css/                         # Stylesheets
+│   ├── options.css
+│   └── popup.css
+│
+├── 04_js/                          # JavaScript files
+│   ├── background.js
+│   ├── options.js
+│   └── popup.js
+│
+├── 05_json/                        # Configuration files
+│   └── manifest.json
+│
+├── 06_ico/                         # Icons and images
+│   ├── 1.png
+│   ├── icon-16.png
+│   ├── icon-32.png
+│   ├── icon-48.png
+│   ├── icon-64.png
+│   ├── icon-96.png
+│   └── icon-128.png
+│
+└── README.md                       # Main documentation
+
 ```
 
 &nbsp;
@@ -200,27 +231,6 @@ To create distribution package:
 zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico/ *.md
 ```
 
-&nbsp;
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-&nbsp;
-
-### Development Guidelines
-
-- Follow existing code style
-- Test thoroughly before submitting
-- Update documentation for new features
-- Maintain security best practices
-
-&nbsp;
-
 ## Roadmap
 
 - [ ] Manifest V3 migration (when Firefox proxy API ready)
@@ -228,19 +238,6 @@ zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico
 - [ ] Per-domain proxy configuration
 - [ ] Import from browser bookmarks
 - [ ] Dark theme support
-
-&nbsp;
-
-## License
-
-MIT License - see [LICENSE](01_md/LICENSE) file for details.
-
-&nbsp;
-
-## Support
-
-- **Issues**: [GitHub Issues](https://github.com/414962002/february17th/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/414962002/february17th/discussions)
 
 &nbsp;
 
