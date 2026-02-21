@@ -120,12 +120,6 @@ For development testing.*
 
 &nbsp;
 
-## Screenshots
-
-*Screenshots will be added after final release*
-
-&nbsp;
-
 ## Privacy & Security
 
 - **Zero data collection** - No analytics, no tracking
