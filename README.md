@@ -130,15 +130,15 @@
 - **Strict input validation** - Protection against malformed domains
 - **Content Security Policy** - Maximum security hardening
 
-See [SECURITY.md](SECURITY.md) for detailed security information.
+See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
 
 &nbsp;
 
 ## Documentation
 
-- [SECURITY.md](SECURITY.md) - Privacy policy and security details
-- [HOW-IT-WORKS.md](HOW-IT-WORKS.md) - Technical architecture
-- [TESTING.md](TESTING.md) - Testing guide
+- [SECURITY.md](01_md/SECURITY.md) - Privacy policy and security details
+- [HOW-IT-WORKS.md](01_md/HOW-IT-WORKS.md) - Technical architecture
+- [TESTING.md](01_md/TESTING.md) - Testing guide
 
 &nbsp;
 
@@ -229,14 +229,14 @@ zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](01_md/LICENSE) file for details.
 
 &nbsp;
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/february17th/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/february17th/discussions)
+- **Issues**: [GitHub Issues](https://github.com/414962002/february17th/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/414962002/february17th/discussions)
 
 &nbsp;
 
