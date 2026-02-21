@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="header">
+      <div class="header-left">
+        <h2>february17th</h2>
+        <div class="header-stats">
+          <div class="stat-item">
+            <span>total:</span>
+            <span class="stat-number" id="totalCount">0</span>
+          </div>
+          <div class="stat-item">
+            <span>active:</span>
+            <span class="stat-number" id="activeCount">0</span>
+          </div>
+          <div class="stat-item">
+            <span>frozen:</span>
+            <span class="stat-number" id="frozenCount">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="settings-btn" id="settingsBtn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="current-site">
+      <div class="site-info">
+        <input type="text" class="domain" id="currentDomain" placeholder="Loading..." />
+      </div>
+      <button class="add-btn" id="addBtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+    </div>
+    
+    <div class="status" id="status"></div>
+    
+    <div class="section-header-popup">
+      <span>Active Domains</span>
+      <span class="count" id="activeCountPopup">0</span>
+    </div>
+    <div class="domains-list" id="activeListPopup">
+      <div class="empty-state">No active domains</div>
+    </div>
+    
+    <div class="section-header-popup">
+      <span>Frozen Domains</span>
+      <span class="count" id="frozenCountPopup">0</span>
+    </div>
+    <div class="domains-list" id="frozenListPopup">
+      <div class="empty-state">No frozen domains</div>
+    </div>
+  
+  <div class="footer-info">
+    No data collection • No tracking • Local only<br>
+    Routes domains through local proxy (127.0.0.1:1080)
+  </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
