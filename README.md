@@ -174,7 +174,6 @@ See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
 ### Project Structure
 
 ```
-february17th/
 february17th-main/
 │
 ├── 01_md/                          # Documentation files
@@ -238,5 +237,5 @@ zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico
 
 ---
 
-
+2026
 
