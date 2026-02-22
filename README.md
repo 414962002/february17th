@@ -72,36 +72,40 @@ For development testing.*
 
 ## Installation
 
-### Quick Install
+### For Users (Permanent Installation)
 
 **[📥 Download february17th v1.0.0](https://github.com/414962002/february17th/releases/download/v1.0.0/february17th-1.0.0.xpi)**
 
 Click the link above, Firefox will prompt you to install the extension.
 
-### Alternative Methods
+**Alternative:**
+- Visit the [Releases page](https://github.com/414962002/february17th/releases)
+- Download `february17th-1.0.0.xpi`
+- Drag and drop into Firefox
 
-- **From Releases:** Visit the [Releases page](https://github.com/414962002/february17th/releases)
-- **Direct Download:** [february17th-1.0.0.xpi](https://github.com/414962002/february17th/raw/main/releases/february17th-1.0.0.xpi)
-- **Manual Install:** Download and drag-drop into Firefox
+&nbsp;
 
-See [INSTALLATION.md](INSTALLATION.md) for detailed instructions.  
+### For Developers (Temporary Installation)
 
-### Manual Installation (Development)
+⚠️ **Warning:** This method loads unsigned code. The extension will be removed when Firefox restarts.
 
-1. Download or clone this repository
+1. Clone this repository
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
 3. Click "Load Temporary Add-on"
 4. Select `manifest.json` from the extension folder
-5. The extension icon will appear in your toolbar
+5. Extension will be removed on Firefox restart
+
+**For permanent installation, use the signed .xpi file above.**
 
 &nbsp;
 
 ## Requirements
 
-- **Firefox 57+** (Manifest V2)  
-- **Local SOCKS5 proxy** running on `127.0.0.1:1080`  
-  - SSH tunnel: `ssh -D 1080 user@server`  
-  - Shadowsocks, or any SOCKS5 proxy   
+- **Firefox 142.0+** (for signed version)
+- **Local SOCKS5 proxy** running on `127.0.0.1:1080`
+  - SSH tunnel: `ssh -D 1080 user@server`
+  - Shadowsocks, or any SOCKS5 proxy
+
 
 &nbsp;
 
