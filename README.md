@@ -74,7 +74,7 @@ For development testing.*
 
 ### From Firefox Add-ons (Recommended)
 
-*Coming soon - pending Mozilla review*
+https://addons.mozilla.org/developers/addon/2982084/versions
 
 &nbsp;
 
