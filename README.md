@@ -72,11 +72,19 @@ For development testing.*
 
 ## Installation
 
-### From Firefox Add-ons (Recommended)
+### Quick Install
 
-https://addons.mozilla.org/developers/addon/2982084/versions
+**[📥 Download february17th v1.0.0](https://github.com/414962002/february17th/releases/download/v1.0.0/february17th-1.0.0.xpi)**
 
-&nbsp;
+Click the link above, Firefox will prompt you to install the extension.
+
+### Alternative Methods
+
+- **From Releases:** Visit the [Releases page](https://github.com/414962002/february17th/releases)
+- **Direct Download:** [february17th-1.0.0.xpi](https://github.com/414962002/february17th/raw/main/releases/february17th-1.0.0.xpi)
+- **Manual Install:** Download and drag-drop into Firefox
+
+See [INSTALLATION.md](INSTALLATION.md) for detailed instructions.  
 
 ### Manual Installation (Development)
 
