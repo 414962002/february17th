@@ -1,5 +1,28 @@
 # Changelog
 
+## [1.0.1] - 2026-03-01
+
+### Changed
+- Improved status message styling with better spacing and rounded corners
+- Consistent input border styling (1px solid #e0e0e0) across popup and settings pages
+- Better button alignment throughout the interface
+- Always-visible scrollbars in domain lists for improved usability
+- Larger header text in settings page (32px) for better readability
+- Status messages now appear below input fields for consistent positioning
+
+### Fixed
+- "Domain already in list" now correctly shows as error instead of success message
+- Button alignment issues in options page resolved
+- Scrollbar visibility in domain list sections
+
+### Technical
+- Added Firefox built-in data collection consent declaration (no data collected)
+- Updated minimum Firefox version to 140.0 (desktop) and 142.0 (Android)
+- Improved manifest.json compliance with latest Firefox Add-ons requirements
+- Added proper `browser_specific_settings` configuration
+
+---
+
 ## [1.0.0] - 2026-02-21
 
 ### Added
@@ -33,3 +56,4 @@
 - Content Security Policy enforcement
 - No external connections or data collection
 - Local storage only
+
