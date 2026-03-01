@@ -101,10 +101,10 @@ Click the link above, Firefox will prompt you to install the extension.
 
 ## Requirements
 
-- **Firefox 142.0+** (for signed version)
-- **Local SOCKS5 proxy** running on `127.0.0.1:1080`
-  - SSH tunnel: `ssh -D 1080 user@server`
-  - Shadowsocks, or any SOCKS5 proxy
+- **Firefox 142.0+** (for signed version)  
+- **Local SOCKS5 proxy** running on `127.0.0.1:1080`  
+  - SSH tunnel: `ssh -D 1080 user@server`  
+  - Shadowsocks, or any SOCKS5 proxy  
 
 
 &nbsp;
