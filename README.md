@@ -1,9 +1,9 @@
 # FEBRUARY17TH
 
 &nbsp;
-<img src="06_ico/1.png" align="right" width="395">  
+<img src="06_ico/1.png" align="right" width="395">  
 
-*A Firefox extension for managing domain-based proxy routing through your local SOCKS5 proxy. This extension requires a local SOCKS5 proxy server. The extension itself does not provide proxy functionality - it only manages which domains route through your existing proxy. "February17th" lets you selectively route specific websites through your local SOCKS5 proxy (127.0.0.1:1080).  
+*A Firefox extension for managing domain-based proxy routing through your local SOCKS5 proxy. This extension requires a local SOCKS5 proxy server. The extension itself does not provide proxy functionality - it only manages which domains route through your existing proxy. "February17th" lets you selectively route specific websites through your local SOCKS5 proxy (127.0.0.1:1080).  
 For development testing.*
 
 &nbsp;
@@ -74,13 +74,13 @@ For development testing.*
 
 ### For Users (Permanent Installation)
 
-**[📥 Download february17th v1.0.0](https://github.com/414962002/february17th/releases/download/v1.0.0/february17th-1.0.0.xpi)**
+**[📥 Download february17th v1.0.1](https://github.com/414962002/february17th/releases/download/v1.0.1/february17th-1.0.1.xpi)**
 
 Click the link above, Firefox will prompt you to install the extension.
 
 **Alternative:**
 - Visit the [Releases page](https://github.com/414962002/february17th/releases)
-- Download `february17th-1.0.0.xpi`
+- Download `february17th-1.0.1.xpi`
 - Drag and drop into Firefox
 
 &nbsp;
@@ -103,8 +103,8 @@ Click the link above, Firefox will prompt you to install the extension.
 
 - **Firefox 142.0+** (for signed version)
 - **Local SOCKS5 proxy** running on `127.0.0.1:1080`
-  - SSH tunnel: `ssh -D 1080 user@server`
-  - Shadowsocks, or any SOCKS5 proxy
+  - SSH tunnel: `ssh -D 1080 user@server`
+  - Shadowsocks, or any SOCKS5 proxy
 
 
 &nbsp;
@@ -185,57 +185,49 @@ See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
 
 ### Project Structure
 
-```
-february17th-main/
-│
-├── 01_md/                          # Documentation files
-│   ├── AMO_REVIEW_NOTES.md
-│   ├── CHANGELOG.md
-│   ├── CONTRIBUTING.md
-│   ├── HOW-IT-WORKS.md
-│   ├── SECURITY.md
-│   └── TESTING.md
-│
-├── 02_html/                        # HTML pages
-│   ├── options.html
-│   └── popup.html
-│
-├── 03_css/                         # Stylesheets
-│   ├── options.css
-│   └── popup.css
-│
-├── 04_js/                          # JavaScript files
-│   ├── background.js
-│   ├── options.js
-│   └── popup.js
-│
-├── 05_json/                        # Configuration files
-│   └── manifest.json
-│
-├── 06_ico/                         # Icons and images
-│   ├── 1.png
-│   ├── icon-16.png
-│   ├── icon-32.png
-│   ├── icon-48.png
-│   ├── icon-64.png
-│   ├── icon-96.png
-│   └── icon-128.png
-│
-└── README.md                       # Main documentation
+Official Mozilla WebExtension structure:
 
+```
+firefox/
+├── manifest.json                   # Extension configuration
+├── background.js                   # Proxy handler & domain management
+├── popup.html                      # Browser action popup
+├── popup.js                        # Popup logic
+├── popup.css                       # Popup styles
+├── options.html                    # Settings page
+├── options.js                      # Settings logic
+├── options.css                     # Settings styles
+└── ico/                            # Icons folder
+    ├── icon-16.png
+    ├── icon-32.png
+    ├── icon-48.png
+    ├── icon-64.png
+    ├── icon-96.png
+    ├── icon-128.png
+    └── 1.png
 ```
 
 &nbsp;
 
-### Building
+### Building & Packaging
 
 No build process required - pure JavaScript.
 
-To create distribution package:
+**For Firefox submission:**
 
 ```bash
-zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico/ *.md
+# Create distribution package
+zip -r february17th-v1.0.1.zip firefox/
 ```
+
+**For temporary testing in Firefox:**
+
+1. Open `about:debugging#/runtime/this-firefox`
+2. Click "Load Temporary Add-on"
+3. Select `firefox/manifest.json`
+4. Test the extension
+
+&nbsp;
 
 ## Roadmap
 
@@ -250,4 +242,5 @@ zip -r february17th-v1.0.0.zip manifest.json background.js popup.* options.* ico
 ---
 
 2026
+
 
