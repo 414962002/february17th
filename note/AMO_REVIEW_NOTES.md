@@ -2,8 +2,6 @@
 ## february17th Extension
 
 **Version:** 1.0.0  
-**Submission Date:** [To be filled]  
-**Developer:** [Your name/email]
 
 ---
 
@@ -365,3 +363,4 @@ We've put significant effort into security, privacy, and code quality. Please le
 **Prepared:** February 20, 2026  
 **For:** Mozilla Add-ons Review Team  
 **Extension:** february17th v1.0.0
+
