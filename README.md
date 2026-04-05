@@ -70,17 +70,31 @@ For development testing.*
 
 &nbsp;
 
+## Version 2.0.0 - Sidebar Panel
+
+**New in v2.0.0:**
+
+- **Persistent sidebar panel** - Full-featured management in Firefox's left sidebar
+- **Three access modes** - Popup (quick add), Sidebar (full management), Options page (spacious view)
+- **Optimized layout** - Sidebar designed for vertical space with fixed inputs and scrollable lists
+- **Individual list scrolling** - Active domains (7 visible) and frozen domains (4 visible) scroll independently
+- **Same functionality** - Add, search, freeze, delete, export/import available in all views
+
+The sidebar provides persistent access to all extension features without opening new tabs. Pin it to the left sidebar for always-on domain management while browsing.
+
+&nbsp;
+
 ## Installation
 
 ### For Users (Permanent Installation)
 
-**[📥 Download february17th v1.0.1](https://github.com/414962002/february17th/releases/download/v1.0.1/february17th-1.0.1.xpi)**
+**[📥 Download february17th v2.0.0](https://github.com/414962002/february17th/releases/download/v2.0.0/february17th-2.0.0.xpi)**
 
 Click the link above, Firefox will prompt you to install the extension.
 
 **Alternative:**
 - Visit the [Releases page](https://github.com/414962002/february17th/releases)
-- Download `february17th-1.0.1.xpi`
+- Download `february17th-2.0.0.xpi`
 - Drag and drop into Firefox
 
 &nbsp;
@@ -141,15 +155,15 @@ Click the link above, Firefox will prompt you to install the extension.
 - **Strict input validation** - Protection against malformed domains
 - **Content Security Policy** - Maximum security hardening
 
-See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
+See [SECURITY.md](note/SECURITY.md) for detailed security information.
 
 &nbsp;
 
 ## Documentation
 
-- [SECURITY.md](01_md/SECURITY.md) - Privacy policy and security details
-- [HOW-IT-WORKS.md](01_md/HOW-IT-WORKS.md) - Technical architecture
-- [TESTING.md](01_md/TESTING.md) - Testing guide
+- [SECURITY.md](note/SECURITY.md) - Privacy policy and security details
+- [HOW-IT-WORKS.md](note/HOW-IT-WORKS.md) - Technical architecture
+- [TESTING.md](note/TESTING.md) - Testing guide
 
 &nbsp;
 
@@ -188,23 +202,32 @@ See [SECURITY.md](01_md/SECURITY.md) for detailed security information.
 Official Mozilla WebExtension structure:
 
 ```
-firefox/
+february17th/
 ├── manifest.json                   # Extension configuration
 ├── background.js                   # Proxy handler & domain management
 ├── popup.html                      # Browser action popup
 ├── popup.js                        # Popup logic
 ├── popup.css                       # Popup styles
+├── sidebar.html                    # Sidebar panel
+├── sidebar.js                      # Sidebar logic
+├── sidebar.css                     # Sidebar styles
 ├── options.html                    # Settings page
 ├── options.js                      # Settings logic
 ├── options.css                     # Settings styles
-└── ico/                            # Icons folder
-    ├── icon-16.png
-    ├── icon-32.png
-    ├── icon-48.png
-    ├── icon-64.png
-    ├── icon-96.png
-    ├── icon-128.png
-    └── 1.png
+├── ico/                            # Icons folder
+│   ├── icon-16.png
+│   ├── icon-32.png
+│   ├── icon-48.png
+│   ├── icon-64.png
+│   ├── icon-96.png
+│   ├── icon-128.png
+│   └── 1.png
+├── note/                           # Documentation
+│   ├── HOW-IT-WORKS.md
+│   ├── SECURITY.md
+│   ├── TESTING.md
+│   └── CHANGELOG.md
+└── README.md
 ```
 
 &nbsp;
@@ -217,30 +240,19 @@ No build process required - pure JavaScript.
 
 ```bash
 # Create distribution package
-zip -r february17th-v1.0.1.zip firefox/
+zip -r february17th-v2.0.0.zip .
 ```
 
 **For temporary testing in Firefox:**
 
 1. Open `about:debugging#/runtime/this-firefox`
 2. Click "Load Temporary Add-on"
-3. Select `firefox/manifest.json`
+3. Select `manifest.json` from the extension folder
 4. Test the extension
-
-&nbsp;
-
-## Roadmap
-
-- [ ] Manifest V3 migration (when Firefox proxy API ready)
-- [ ] Domain groups/categories
-- [ ] Per-domain proxy configuration
-- [ ] Import from browser bookmarks
-- [ ] Dark theme support
 
 &nbsp;
 
 ---
 
 2026
-
 
