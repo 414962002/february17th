@@ -88,7 +88,7 @@ The sidebar provides persistent access to all extension features without opening
 
 ### For Users (Permanent Installation)
 
-**[📥 Download february17th v2.0.0](https://github.com/414962002/february17th/releases/download/v2.0.0/february17th-2.0.0.xpi)**
+**[📥 Download february17th v2.0.0](https://github.com/414962002/february17th/releases/download/v2.0.0/dd75d7c9dae8419485e0-2.0.0.xpi)**
 
 Click the link above, Firefox will prompt you to install the extension.
 
