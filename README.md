@@ -6,6 +6,11 @@
 *A Firefox extension for managing domain-based proxy routing through your local SOCKS5 proxy. This extension requires a local SOCKS5 proxy server. The extension itself does not provide proxy functionality - it only manages which domains route through your existing proxy. "February17th" lets you selectively route specific websites through your local SOCKS5 proxy (127.0.0.1:1080).  
 For development testing.*
 
+
+set on the firefox  
+_Configure Proxy Access to the Internet_
+🦤 `No proxy  `  🦤  
+ 
 &nbsp;
 
 &nbsp;
