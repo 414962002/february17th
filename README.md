@@ -8,7 +8,7 @@ For development testing.*
 
 
 set on the firefox  
-_Configure Proxy Access to the Internet_
+_Configure Proxy Access to the Internet_  
 🦤 `No proxy  `  🦤  
  
 &nbsp;
